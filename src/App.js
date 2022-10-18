@@ -1,9 +1,17 @@
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Header from "./components/Header/Header";
+
 function App() {
-  return (
-    <>
-    Deneme
-    </>
-  );
+	return (
+		<>
+			<Header />
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" />
+				</Routes>
+			</BrowserRouter>
+		</>
+	);
 }
 
 export default App;
