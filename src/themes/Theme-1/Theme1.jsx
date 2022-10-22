@@ -4,7 +4,7 @@ import "./mobile.css";
 
 const Theme1 = () => {
     return (
-        <>
+        <div className="theme1">
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
             <nav class="navbar">
                 <div class="brand">
@@ -224,7 +224,7 @@ const Theme1 = () => {
             <div class="copyright container">
                 <p>© 2022 @veyselkartalmis</p>
             </div>
-        </>
+        </div>
     )
 }
 
