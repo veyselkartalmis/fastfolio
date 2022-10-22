@@ -8,6 +8,8 @@
     overflow: hidden;
 
     h4 {
+        position: relative;
+        z-index: 2;
         font-weight: 600;
         font-size: 111px;
         color: #fff;
@@ -98,7 +100,6 @@
             left: 50%;
             top: 55%;
             transform: translate(-50%, -50%);
-            z-index: -1;
             opacity: 0.4;
 
             img {

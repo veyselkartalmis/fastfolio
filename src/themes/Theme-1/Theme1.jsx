@@ -210,7 +210,7 @@ const Theme1 = () => {
                     <h3><i class="fa fa-envelope-o"></i> veyselkartalms@gmail.com</h3>
                     <div class="quick-links">
                         <div class="brand">
-                            <img src="/img/logo.png" alt="" />
+                            <img src={logo} alt="logo" />
                         </div>
                         <ul>
                             <li>Home</li>

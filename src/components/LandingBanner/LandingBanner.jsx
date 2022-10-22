@@ -1,12 +1,10 @@
 import React from 'react'
 import "./landingBanner.scss";
-import Header from '../Header/Header';
 import { clock, wallet, rocket } from '../../assets/img';
 
 const LandingBanner = () => {
     return (
         <>
-            <Header />
             <div className="landing-banner">
                 <h4>Fast. Responsive. Free.</h4>
                 <div className="decors">
