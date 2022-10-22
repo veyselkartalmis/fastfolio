@@ -1,17 +1,18 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Header from "./components/Header/Header";
+import { Link, Routes, Route, BrowserRouter } from "react-router-dom";
+import LandingPage from "./pages/LandingPage/LandingPage";
+import Theme1 from "./themes/Theme-1/Theme1";
 
 function App() {
-	return (
-		<>
-			<Header />
-			<BrowserRouter>
-				<Routes>
-					<Route path="/" />
-				</Routes>
-			</BrowserRouter>
-		</>
-	);
+  return (
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/theme1" element={<Theme1 />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 }
 
 export default App;
