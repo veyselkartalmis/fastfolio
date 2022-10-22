@@ -1,0 +1,108 @@
+.landing-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+
+    h4 {
+        font-weight: 600;
+        font-size: 111px;
+        color: #fff;
+    }
+
+    .scroll-down {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%) scale(0.8);
+        display: flex;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 29px;
+        color: #dddde4;
+        opacity: 0.3;
+        align-items: center;
+        cursor: pointer;
+
+        svg {
+            fill: none;
+            stroke: #dddde4;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 3px;
+            margin-left: 10px;
+        }
+    }
+
+    .decors {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            width: 2000px;
+            height: 2000px;
+            background: radial-gradient(#f47701 0%, rgba(1, 1, 31, 0) 70%);
+            opacity: 0.6;
+        }
+
+        .clock {
+            position: absolute;
+            left: -200px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 1400px;
+                height: 1300px;
+                background: radial-gradient(#9a600e 0%, rgba(1, 1, 31, 0) 70%);
+                top: -80%;
+                left: -180%;
+                z-index: -1;
+                opacity: 0.8;
+            }
+        }
+        .wallet {
+            position: absolute;
+            right: -100px;
+            top: 70%;
+            transform: translateY(-50%);
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 1000px;
+                height: 1000px;
+                background: radial-gradient(#09097e 0%, rgba(1, 1, 31, 0) 70%);
+                top: -70%;
+                right: -120%;
+                z-index: -1;
+            }
+        }
+
+        .rocket {
+            position: absolute;
+            left: 50%;
+            top: 55%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            opacity: 0.4;
+
+            img {
+                width: 777px;
+                height: 777px;
+            }
+        }
+    }
+}

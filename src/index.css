@@ -1,4 +1,44 @@
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #01011f;
+  font-family: "Volte";
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Volte";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Volte Light"), url("./assets/fonts/Volte-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Volte";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Volte Regular"), url("./assets/fonts/Volte.woff") format("woff");
+}
+@font-face {
+  font-family: "Volte";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Volte Medium"), url("./assets/fonts/Volte-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Volte";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Volte Semibold"), url("./assets/fonts/Volte-Semibold.woff") format("woff");
+}
+@font-face {
+  font-family: "Volte";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Volte Bold"), url("./assets/fonts/Volte-Bold.woff") format("woff");
 }

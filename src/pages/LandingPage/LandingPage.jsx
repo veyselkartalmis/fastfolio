@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import LandingBanner from '../../components/LandingBanner/LandingBanner';
 
 const LandingPage = () => {
     return (
-        <div>LandingPage</div>
+        <>
+            <LandingBanner />
+        </>
     )
 }
 
