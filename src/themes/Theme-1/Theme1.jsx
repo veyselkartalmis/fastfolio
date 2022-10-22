@@ -1,6 +1,7 @@
 import React from 'react';
 import "./style.css";
 import "./mobile.css";
+import { dots, logo, mail } from './assets';
 
 const Theme1 = () => {
     return (
@@ -8,7 +9,7 @@ const Theme1 = () => {
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
             <nav class="navbar">
                 <div class="brand">
-                    <img src="/img/logo.png" alt="" />
+                    <img src={logo} alt="logo" />
                 </div>
                 <div class="nav-list">
                     <ul>
@@ -42,7 +43,7 @@ const Theme1 = () => {
                     </div>
                     <div class="col col-2">
                         <div class="hero-img">
-                            <img src="/img/profile.png" alt="" />
+                            <img src="https://via.placeholder.com/630x800" alt="profile" />
                         </div>
                     </div>
                 </div>

@@ -120,6 +120,7 @@ li:hover {
     font-size: 18px;
     cursor: pointer;
     transition: all 0.3s;
+    list-style: none;
 }
 
 .logo {
