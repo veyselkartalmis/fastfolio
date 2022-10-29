@@ -5,6 +5,7 @@ import LandingBanner from "../../components/LandingBanner/LandingBanner";
 import Header from "../../components/Header/Header";
 import LandingFaq from '../../components/LandingFaq/LandingFaq';
 import LandingShowCase from "../../components/LandingShowCase/LandingShowCase";
+import Footer from '../../components/Footer/Footer';
 import { case1, case2, case3, fastfolioLogo } from '../../assets/img';
 
 const LandingPage = () => {
@@ -25,6 +26,7 @@ const LandingPage = () => {
                     <Link className="link" to="/templates">Checkout Templates</Link>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
