@@ -1,0 +1,42 @@
+.home-showcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 180px 0 50px;
+
+    .showcase-item {
+        position: relative;
+        width: 600px;
+        height: 1000px;
+
+        .img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: no-repeat center/cover;
+        }
+
+        &:nth-child(1) {
+            transform: translateX(20%) scale(0.8);
+        }
+
+        &:nth-child(2) {
+            z-index: 2;
+            border: 6px solid #fff;
+            border-radius: 40px;
+            overflow: hidden;
+            box-shadow: 0 0 40px -10px #000000c9;
+        }
+
+        &:nth-child(3) {
+            transform: translateX(-20%) scale(0.8);
+        }
+
+        &:nth-child(1),
+        &:nth-child(3) {
+            opacity: 0.8;
+        }
+    }
+}
