@@ -2,7 +2,7 @@
 
 .theme1 {
     font-family: "Poppins", arial;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 :root {
@@ -123,9 +123,6 @@ li:hover {
     list-style: none;
 }
 
-.logo {
-    width: 50px;
-}
 /* NAVBAR */
 
 /* HEADER */

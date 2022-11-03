@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./header.scss";
 
 const Header = () => {
+  const [isOpen, setisOpen] = useState(false);
+
+  const handleToggle = () => {
+    !isOpen ? setisOpen(true) : setisOpen(false);
+  }
+
   return (
     <header>
       <div className="logo">
@@ -17,12 +23,16 @@ const Header = () => {
         </a>
         <a href="javascript:;" className="link-item">Developers</a>
       </div>
-      <div className="mobile-btn">
+      <div className={`mobile-btn ${isOpen ? "active" : ""}`} onClick={handleToggle}>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
       </div>
-    </header>
+      <div className={`mobile-menu  ${isOpen ? "active" : ""}`}>
+        <a className="link" href="javascript:;">Templates</a>
+        <a className="link" href="javascript:;" >Developers</a>
+      </div>
+    </header >
   )
 }
 
