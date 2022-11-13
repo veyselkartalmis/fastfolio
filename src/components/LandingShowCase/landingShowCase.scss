@@ -4,10 +4,20 @@
     justify-content: center;
     margin: 180px 0 50px;
 
+    @media only screen and (max-width: 1024px) {
+        flex-direction: column;
+        gap: 50px;
+    }
+
     .showcase-item {
         position: relative;
         width: 600px;
         height: 1000px;
+
+        @media only screen and (max-width: 1024px) {
+            width: 400px;
+            height: 600px;
+        }
 
         .img {
             position: absolute;
@@ -20,6 +30,10 @@
 
         &:nth-child(1) {
             transform: translateX(20%) scale(0.8);
+            @media only screen and (max-width: 1024px) {
+                transform: unset;
+                border-radius: 40px;
+            }
         }
 
         &:nth-child(2) {
@@ -28,10 +42,17 @@
             border-radius: 40px;
             overflow: hidden;
             box-shadow: 0 0 40px -10px #000000c9;
+
+            @media only screen and (max-width: 1024px) {
+                border: unset;
+            }
         }
 
         &:nth-child(3) {
             transform: translateX(-20%) scale(0.8);
+            @media only screen and (max-width: 1024px) {
+                transform: unset;
+            }
         }
 
         &:nth-child(1),

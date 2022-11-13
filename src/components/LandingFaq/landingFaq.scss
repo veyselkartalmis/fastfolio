@@ -15,6 +15,10 @@
         border-radius: 30px;
         background: linear-gradient(-100deg, #905c0e7e 0%, #11113236 70%);
 
+        @media only screen and (max-width: 1024px) {
+            padding: 60px 0;
+        }
+
         &:before {
             content: "";
             position: absolute;
@@ -24,6 +28,7 @@
             right: 0;
             border-radius: 30px;
             border: 10px solid rgba(255, 255, 255, 0.041);
+            pointer-events: none;
         }
 
         .cnt {
@@ -37,10 +42,19 @@
                 display: flex;
                 align-items: center;
                 font-weight: 600;
-                font-size: 75px;
+                font-size: clamp(32px, 3.9vw, 75px);
                 color: #fff;
                 line-height: 1;
                 margin-bottom: 50px;
+
+                @media only screen and (max-width: 1024px) {
+                    flex-direction: column;
+                    gap: 20px;
+
+                    img {
+                        width: 200px;
+                    }
+                }
 
                 img {
                     height: 56px;
@@ -51,7 +65,7 @@
             .exp {
                 font-weight: normal;
                 font-style: italic;
-                font-size: 57px;
+                font-size: clamp(24px, 3vw, 55px);
                 text-align: center;
                 color: #fff;
 
@@ -87,6 +101,11 @@
             position: relative;
             background-color: #01011f;
             cursor: pointer;
+
+            @media only screen and (max-width: 991px) {
+                padding: 25px 60px;
+                font-size: 24px;
+            }
 
             &:before {
                 content: "";

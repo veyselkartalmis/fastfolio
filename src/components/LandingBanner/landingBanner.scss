@@ -64,6 +64,16 @@
             top: 50%;
             transform: translateY(-50%);
 
+            @media only screen and (max-width: 1500px) {
+                left: -100px;
+            }
+
+            img {
+                @media only screen and (max-width: 1440px) {
+                    width: 350px;
+                }
+            }
+
             &:before {
                 content: "";
                 position: absolute;
@@ -81,6 +91,12 @@
             right: -100px;
             top: 70%;
             transform: translateY(-50%);
+
+            img {
+                @media only screen and (max-width: 1440px) {
+                    width: 350px;
+                }
+            }
 
             &:before {
                 content: "";
@@ -104,6 +120,10 @@
             img {
                 width: 777px;
                 height: 777px;
+
+                @media only screen and (max-width: 1500px) {
+                    width: 500px;
+                }
             }
         }
     }
