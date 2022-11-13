@@ -9,8 +9,9 @@
         position: relative;
         z-index: 2;
         font-weight: 600;
-        font-size: 111px;
+        font-size: clamp(48px, 5.5vw, 110px);
         color: #fff;
+        text-align: center;
     }
 
     .scroll-down {
