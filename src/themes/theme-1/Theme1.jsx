@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { profilePicture } from "./assets/img/index";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SkillsCard from './components/SkillsCard/SkillsCard';
+import ProjectCard from './components/ProjectCard/ProjectCard';
 import $ from 'jquery';
 import './style.scss';
 import 'swiper/css';
@@ -84,21 +85,9 @@ function Theme1() {
             <div className="projects">
                 <div className="g-title">some of my projects</div>
                 <div className="project-list">
-                    <a href="javascript:;" className="project-item">
-                        <div className="link">github.com</div>
-                        <div className="name">Fake Tweet Generator</div>
-                        <svg width="43.134" height="43.341" viewBox="0 0 43.134 43.341"><defs></defs><g transform="translate(0.5 0.707)"><path d="M38.112,22.386V36.43a4.682,4.682,0,0,1-4.682,4.682H7.682A4.682,4.682,0,0,1,3,36.43V10.682A4.682,4.682,0,0,1,7.682,6H21.726" transform="translate(-3 1.022)" /><path d="M15,3H29.045V17.045" transform="translate(13.09 -3)" /><line y1="25.848" x2="24.002" transform="translate(16.617)" /></g></svg>
-                    </a>
-                    <a href="javascript:;" className="project-item">
-                        <div className="link">github.com</div>
-                        <div className="name">Fake Tweet Generator</div>
-                        <svg width="43.134" height="43.341" viewBox="0 0 43.134 43.341"><defs></defs><g transform="translate(0.5 0.707)"><path d="M38.112,22.386V36.43a4.682,4.682,0,0,1-4.682,4.682H7.682A4.682,4.682,0,0,1,3,36.43V10.682A4.682,4.682,0,0,1,7.682,6H21.726" transform="translate(-3 1.022)" /><path d="M15,3H29.045V17.045" transform="translate(13.09 -3)" /><line y1="25.848" x2="24.002" transform="translate(16.617)" /></g></svg>
-                    </a>
-                    <a href="javascript:;" className="project-item">
-                        <div className="link">github.com</div>
-                        <div className="name">Fake Tweet Generator</div>
-                        <svg width="43.134" height="43.341" viewBox="0 0 43.134 43.341"><defs></defs><g transform="translate(0.5 0.707)"><path d="M38.112,22.386V36.43a4.682,4.682,0,0,1-4.682,4.682H7.682A4.682,4.682,0,0,1,3,36.43V10.682A4.682,4.682,0,0,1,7.682,6H21.726" transform="translate(-3 1.022)" /><path d="M15,3H29.045V17.045" transform="translate(13.09 -3)" /><line y1="25.848" x2="24.002" transform="translate(16.617)" /></g></svg>
-                    </a>
+                    <ProjectCard name={"Fake Tweet Generator"} link="https://github.com/veyselkartalmis/fastfolio" />
+                    <ProjectCard name={"Fake Tweet Generator"} link="https://github.com/veyselkartalmis/fastfolio" />
+                    <ProjectCard name={"Fake Tweet Generator"} link="https://github.com/veyselkartalmis/fastfolio" />
                 </div>
             </div>
             <footer>
