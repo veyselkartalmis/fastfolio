@@ -1,13 +1,39 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { profilePicture } from "./assets/img/index";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SkillsCard from './components/SkillsCard/SkillsCard';
-import ProjectCard from './components/ProjectCard/ProjectCard';
+import SkillsCard from './components/SkillsCard';
+import ProjectCard from './components/ProjectCard';
 import $ from 'jquery';
 import './style.scss';
 import 'swiper/css';
 
 function Theme1() {
+
+    const personalSkills = ["Problem Solver", "Enterprising", "Hard-Worker", "Responsible", "Reliable",];
+
+    const projects = [
+        {
+            projectName: "Fake Tweet Generator",
+            url: "https://github.com/veyselkartalmis/fastfolio"
+        },
+        {
+            projectName: "Fake Tweet Generator2",
+            url: "https://github.com/veyselkartalmis/fastfolio"
+        },
+        {
+            projectName: "Fake Tweet Generator2",
+            url: "https://github.com/veyselkartalmis/fastfolio"
+        },
+    ];
+
+    const techSkills = [
+        { name: "Adobe XD", percent: "80%" },
+        { name: "Premiere", percent: "50%" },
+        { name: "HTML", percent: "90%" },
+        { name: "Javascript", percent: "70%" },
+        { name: "CSS", percent: "85%" },
+        { name: "React.js", percent: "65%" },
+    ]
 
     const [mode, setMode] = useState('dark');
 
@@ -56,12 +82,9 @@ function Theme1() {
             <div className="skills">
                 <div className="g-title">what i can do</div>
                 <div className="skill-list">
-                    <SkillsCard name={"Adobe XD"} percent={"80%"} />
-                    <SkillsCard name={"Premiere"} percent={"50%"} />
-                    <SkillsCard name={"HTML"} percent={"100%"} />
-                    <SkillsCard name={"Javascript"} percent={"80%"} />
-                    <SkillsCard name={"CSS"} percent={"100%"} />
-                    <SkillsCard name={"React.js"} percent={"60%"} />
+                    {techSkills.map((skills) => (
+                        <SkillsCard name={skills.name} percent={skills.percent} />
+                    ))}
                 </div>
             </div>
             <div className="soft-skills">
@@ -71,11 +94,9 @@ function Theme1() {
                     slidesPerView={1.5}
                     centeredSlides={'true'}
                 >
-                    <SwiperSlide>Problem Solver</SwiperSlide>
-                    <SwiperSlide>Enterprising</SwiperSlide>
-                    <SwiperSlide>Hard-Worker</SwiperSlide>
-                    <SwiperSlide>Responsible</SwiperSlide>
-                    <SwiperSlide>Reliable</SwiperSlide>
+                    {personalSkills.map((pSkills) => (
+                        <SwiperSlide>{pSkills}</SwiperSlide>
+                    ))}
                 </Swiper>
             </div>
             <div className="coverletter">
@@ -85,9 +106,9 @@ function Theme1() {
             <div className="projects">
                 <div className="g-title">some of my projects</div>
                 <div className="project-list">
-                    <ProjectCard name={"Fake Tweet Generator"} link="https://github.com/veyselkartalmis/fastfolio" />
-                    <ProjectCard name={"Fake Tweet Generator"} link="https://github.com/veyselkartalmis/fastfolio" />
-                    <ProjectCard name={"Fake Tweet Generator"} link="https://github.com/veyselkartalmis/fastfolio" />
+                    {projects.map((project) => (
+                        <ProjectCard name={project.projectName} link={project.url} />
+                    ))}
                 </div>
             </div>
             <footer>
